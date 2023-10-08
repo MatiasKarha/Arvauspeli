@@ -9,31 +9,19 @@ public class Arvauspeli {
 		
 		String answer;
 		
-//		System.out.println("Arvaa minun nimi.");
-//		answer = in.nextLine();
-//
-//		if (answer.equals("Masa"))
-//		{
-//			System.out.println("Onnittelut arvasit oikein!");
-//		}
-//		else
-//		{
-//			System.out.println("Arvaa uudelleen.");
-//		}
-		
 		do
 		{
 			System.out.println("Guess my name");
 			answer = in.nextLine();
 			
-			if (answer.equals("Masa"))
-				{
+			if (answer.equals("Loppu"))
+			{
 				break;
-				}
-				else
-				{
+			}
+			else if (!answer.equals("Masa"))
+			{
 				System.out.println("Guess again");
-				}
+			}
 				
 		} while (!answer.equals("Masa"));
 		
