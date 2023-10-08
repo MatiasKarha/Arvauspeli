@@ -9,9 +9,10 @@ public class Arvauspeli {
 		
 		String answer;
 		
+		System.out.println("Guess my name");
+		
 		do
 		{
-			System.out.println("Guess my name");
 			answer = in.nextLine();
 			
 			if (answer.equals("Loppu"))
